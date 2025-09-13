@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { ConfigProvider, theme } from "antd";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,7 +11,7 @@ import Toastify from "./components/Toastify";
 const App = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [toastifyObj, setToastifyObj] = useState("");
-    
+
     const [addToCurrentWeek, setAddToCurrentWeek] = useState(0);
     const [announcementData, setAnnouncementData] = useState({
         startWeekDate: "",
